@@ -20,7 +20,8 @@ namespace epam_sweets
                 Name = "FlashSweet";
                 Weight = 5;
                 Sugar = 0.2f;
-                sweetcount++; 
+                sweetcount++;
+                Print();
             }
         public void Print ()
         {

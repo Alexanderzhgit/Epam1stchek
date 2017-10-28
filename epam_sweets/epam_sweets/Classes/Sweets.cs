@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace epam_sweets
 {
-    class Program
+    public class Sweets
     {
-        static void Main(string[] args)
-        {
+        public string Name;
+        public int Weight;
+        public float Sugar;
 
-        }
+
+
     }
 }

@@ -8,6 +8,7 @@ namespace epam_sweets
 {
     public class Sweets
     {
+        public string Type;
         public string Name;
         public int Weight;
         public float Sugar;
@@ -15,12 +16,19 @@ namespace epam_sweets
 
         public Sweets () 
             {
-                Name = "Lolipop";
+                Type = "Lolipop";
+                Name = "FlashSweet";
                 Weight = 5;
                 Sugar = 0.2f;
                 sweetcount++; 
             }
-
+        public void Print ()
+        {
+            Console.WriteLine("Type of Sweet: " + Type);
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Weight: " + Weight);
+            Console.WriteLine("Sugar amount: " + Sugar);
+        }
 
     }
 }

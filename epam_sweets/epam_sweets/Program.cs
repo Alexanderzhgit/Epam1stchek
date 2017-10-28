@@ -10,6 +10,7 @@ namespace epam_sweets
     {
         static void Main(string[] args)
         {
+            Sweets lolipop = new Sweets();
 
         }
     }

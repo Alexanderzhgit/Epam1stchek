@@ -15,6 +15,7 @@ namespace Epam1stchekpoint
         void ShowThis();
         IEnumerable<Sweet> Find(int min, int max);
         void FindThis(int min, int max);
+        void Add(Sweet sweets);
 
     }
 }

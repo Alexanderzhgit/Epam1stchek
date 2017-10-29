@@ -8,5 +8,9 @@ namespace epam_sweets.Interfaces
 {
     interface ICandy
     {
+        string Typeof { get; set; }
+        string Name { get; set; }
+        int Weight { get; set; }
+        float Sugar { get; set; }
     }
 }

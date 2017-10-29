@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using epam_sweets.Interfaces;
 
 namespace epam_sweets
 {
-    public abstract class Sweets
+    public abstract class Lollipop:ISweetItem
     {
-        public string Typeof { get; private set; }
-        public string Name { get; private set; }
-        public int Weight { get; private set; }
-        public float Sugar { get; private set; }
+        public abstract string Name { get; set; }
+        public abstract float Sugar { get; set; }
+        public abstract string Typeof { get; set; }
+        public abstract int Weight { get; set; }
         public static int sweetcount = 0;
 
-        public Sweets ( string _type, string _name, int _weight, float _sugar) 
+        public Lollipop ( string _type, string _name, int _weight, float _sugar) 
             {
             Typeof = _type;
             Name = _name;
@@ -24,6 +25,9 @@ namespace epam_sweets
                 sweetcount++;
                 Print();
             }
+
+      
+
         public void Print ()
         {
             Console.WriteLine("Type of Sweet: " + Typeof);

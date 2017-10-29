@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace epam_sweets.Interfaces
 {
-    interface ISweetItem
+   public interface ISweetItem
     {
         string Typeof { get; set; }
         string Name { get; set; }

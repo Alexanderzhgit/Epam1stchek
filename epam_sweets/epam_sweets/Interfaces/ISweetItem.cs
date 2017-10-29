@@ -8,9 +8,9 @@ namespace epam_sweets.Interfaces
 {
    public interface ISweetItem
     {
-        string Typeof { get; set; }
         string Name { get; set; }
         int Weight { get; set; }
         float Sugar { get; set; }
+        void Print();
     }
 }

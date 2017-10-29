@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Gift.cs" />
     <Compile Include="Interfaces\IGiftItem.cs" />
     <Compile Include="Interfaces\ISweetItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\Lollipop.cs" />
+    <Compile Include="Classes\Sweet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

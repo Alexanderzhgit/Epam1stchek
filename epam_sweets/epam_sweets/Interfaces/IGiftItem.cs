@@ -10,5 +10,9 @@ namespace epam_sweets.Interfaces
     {
         int AllWeight { get; set; }
         int AllSugar{ get; set; }
+        void SortByName();
+        void AddSweet(Sweet sweet);
+        void Make(List<Sweet> listSweet);
+        void FindSweetBySugar(double minimalSugar, double maximalSugar);
     }
 }

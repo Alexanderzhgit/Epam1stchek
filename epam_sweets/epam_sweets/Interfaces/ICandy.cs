@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace epam_sweets.Classes
+namespace epam_sweets.Interfaces
 {
-    interface ISweets
+    interface ICandy
     {
-             
     }
 }

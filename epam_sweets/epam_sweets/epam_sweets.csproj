@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ChokolateSweet.cs" />
     <Compile Include="Classes\Gift.cs" />
     <Compile Include="Interfaces\IGiftItem.cs" />
     <Compile Include="Interfaces\ISweetItem.cs" />

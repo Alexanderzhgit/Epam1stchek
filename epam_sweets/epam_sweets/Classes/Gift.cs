@@ -9,6 +9,15 @@ namespace epam_sweets.Classes
 {
     class Gift : IGiftItem
     {
+        public Gift() { }
+        public Gift(List<Sweet> listSweet)
+        {
+            foreach (Sweet sweet in listSweet)
+            {
+                gift.Add(sweet);
+            }
+        }
+        private List<Sweet> gift = new List<Sweet>();
         public int AllSugar
         {
             get
@@ -26,7 +35,12 @@ namespace epam_sweets.Classes
         {
             get
             {
-                throw new NotImplementedException();
+                double weight = 0;
+                foreach (Sweet sweet in gift)
+                {
+                    weight += sweet.Weight;
+                }
+                return AllWeight;
             }
 
             set
@@ -37,22 +51,33 @@ namespace epam_sweets.Classes
 
         public void AddSweet(Sweet sweet)
         {
-            throw new NotImplementedException();
+            gift.Add(sweet);
         }
 
         public void FindSweetBySugar(double minimalSugar, double maximalSugar)
         {
-            throw new NotImplementedException();
+            List<Sweet> FindSweetBySugar = gift.FindAll(
+                     delegate (Sweet sweet)
+                        { return ((sweet.Sugar >= minimalSugar) && (sweet.Sugar <= maximalSugar)); });
+
+            foreach (Sweet sweet in FindSweetBySugar)
+            {
+                Console.WriteLine(sweet.Name + " (weight: " + sweet.Weight + ", sugar: " + sweet.Sugar +")");
+            }
+            return FindSweetBySugar;
         }
 
         public void Make(List<Sweet> listSweet)
         {
-            throw new NotImplementedException();
+            foreach (Sweet sweet in listSweet)
+            {
+                gift.Add(sweet);
+            }
         }
 
         public void SortByName()
         {
-            throw new NotImplementedException();
+            gift.Sort(delegate (Sweet sweet1, Sweet sweet2) { return sweet1.Name.CompareTo(sweet2.Name); });
         }
     }
 }

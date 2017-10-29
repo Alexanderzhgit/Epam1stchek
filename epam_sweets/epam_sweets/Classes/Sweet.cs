@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using epam_sweets.Classes;
 using epam_sweets.Interfaces;
 
 namespace epam_sweets
@@ -22,5 +23,10 @@ namespace epam_sweets
         }
 
         public abstract void Print();
+
+        public static implicit operator Sweet(LollipopSweet v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\ChokolateSweet.cs" />
     <Compile Include="Classes\Gift.cs" />
+    <Compile Include="Classes\LollipopSweet.cs" />
     <Compile Include="Interfaces\IGiftItem.cs" />
     <Compile Include="Interfaces\ISweetItem.cs" />
     <Compile Include="Program.cs" />
